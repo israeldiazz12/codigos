@@ -1,0 +1,45 @@
+importar  Java . útil _ escáner ;
+
+ clase  pública PruebaFactura {
+
+	public  static  void  main ( String [] args ){
+
+		 Número de cuerda ,
+			   descripcion ;
+		intcantidad     ; _
+		doble  precio ;
+
+		 Entrada de escáner = nuevo  escáner ( System . in );
+
+		sistema _ fuera _ println ( "====DATOS INICIALES====" );
+
+		Factura  factura1 = factura nueva  ();
+
+		factura1 . obtenerDatosFactura ();
+
+		sistema _ fuera _ print ( "\nIngrese numero de pieza: " );
+		número = entrada . siguienteLinea ();
+		factura1 . establecerNumPza ( numero );
+		sistema _ fuera _ println ( "Numero de pieza: " + factura1 . obtenerNumPza ());
+
+		sistema _ fuera _ print ( "\nIngrese la descripcion de la pieza: " );
+		descripcion = entrada . siguienteLinea ();
+		factura1 . establecer DescPza ( descripcion );
+		sistema _ fuera _ println ( "Descripcion: " + factura1 . obtenerDescPza ());
+
+		sistema _ fuera _ print ( "\nIngrese cantidad de piezas:" );
+		cantidad = entrada . siguienteInt ();
+		factura1 . establecerQtyPzas ( cantidad );
+		sistema _ fuera _ println ( "Cantidad: " + factura1 . obtenerQtyPzas ());
+
+		sistema _ fuera _ print ( "\nIngrese precio de pieza:" );
+		precio = entrada . siguienteDoble ();
+		factura1 . establecerPrecPza ( precio );
+		sistema _ fuera _ println ( "Precio x pza: " + factura1 . obtenerPrecPza ());
+
+		sistema _ fuera _ imprimirln ( "" ); //salto de linea
+		factura1 . obtenerMontoFactura ();
+
+	}
+
+}

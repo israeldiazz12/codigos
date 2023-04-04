@@ -1,0 +1,73 @@
+ public  class  PruebaEmpleado {
+
+	public  static  void  main ( String [] args ){
+
+		String  nombre ;
+	    String  apellido ;
+		doble  salario ;
+
+		empleado  empleado1 = nuevo  Empleado ();
+		empleado  empleado2 = nuevo  Empleado ();
+
+		 Entrada de escáner = nuevo  escáner ( System . in );
+
+		sistema _ fuera _ println ( "DATOS INICIALES" );
+		empleado1 . obtenerDatosEmpleado ();
+
+
+		sistema _ fuera _ println ( "\nREGISTRO EMPLEADO 1" );
+
+		sistema _ fuera _ print ( "Ingrese primer nombre:" );
+		nombre = entrada . siguienteLinea ();
+		empleado1 . establecerPrimNom ( nombre );
+		sistema _ fuera _ printf ( "Nombre asignado: %s" , empleado1 . obtenerPrimNom ());
+
+		sistema _ fuera _ print ( "\nIngreso Apellido Paterno:" );
+		apellido = entrada . siguienteLinea ();
+		empleado1 . establecerApePat ( apellido );
+		sistema _ fuera _ printf ( "Apellido asignado: %s" , empleado1 . obtenerApePat ());
+
+		sistema _ fuera _ print ( "\nIngreso salario mensual: " );
+		salario = entrada . siguienteDoble ();
+		empleado1 . establecer SalMen ( salario );
+		sistema _ fuera _ printf ( "Salario mensual asigando: $%.2f" , empleado1 . obtenerSalMen ());
+		entrada _ siguienteLinea (); //se utiliza para limpiar el buffer del teclado por var int
+
+
+		sistema _ fuera _ println ( "\n\nREGISTRO EMPLEADO 2" );
+
+		sistema _ fuera _ print ( "Ingrese primer nombre:" );
+		nombre = entrada . siguienteLinea ();
+		empleado2 . establecerPrimNom ( nombre );
+		sistema _ fuera _ printf ( "Nombre asignado: %s" , empleado2 . obtenerPrimNom ());
+
+		sistema _ fuera _ print ( "\nIgrese Apellido Paterno:" );
+		apellido = entrada . siguienteLinea ();
+		empleado2 . establecerApePat ( apellido );
+		sistema _ fuera _ printf ( "Nombre asigando: %s" , empleado2 . obtenerApePat ());
+
+		sistema _ fuera _ print ( "\nIngreso salario mensual: " );
+		salario = entrada . siguienteDoble ();
+		empleado2 . establecer SalMen ( salario );
+		sistema _ fuera _ printf ( "Salario mensual asigando: $%.2f" , empleado2 . obtenerSalMen ());
+
+		sistema _ fuera _ imprimirln ( "" );
+
+		sistema _ fuera _ printf ( "\nSalario anual de %s %s: $%.2f" , empleado1 . obtenerPrimNom (),
+													   		 empleado1 . obtenerApePat (),
+													   		 empleado1 . obtenerSalMen ()* 12 );
+		sistema _ fuera _ printf ( "\nSalario anual de %s %s: $%.2f" , empleado2 . obtenerPrimNom (),
+				   									   		 empleado2 . obtenerApePat (),
+				   									   		 empleado2 . obtenerSalMen ()* 12 );
+		sistema _ fuera _ print ( "\n\nSE APLICA AUMENTO SALARIAL DEL 10%, " );
+		sistema _ fuera _ println ( "los nuevos salarios son:" );
+		sistema _ fuera _ printf ( "\nSalario anual de %s %s: $%.2f" , empleado1 . obtenerPrimNom (),
+				   									   		 empleado1 . obtenerApePat (),
+				   									   		 ( empleado1 . obtenerSalMen ()* 1.10 )* 12 );
+		sistema _ fuera _ printf ( "\nSalario anual de %s %s: $%.2f" , empleado2 . obtenerPrimNom (),
+				   									   		 empleado2 . obtenerApePat (),
+				   									   		 ( empleado2 . obtenerSalMen ()* 1.10 )* 12 );	
+
+	}
+
+}

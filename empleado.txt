@@ -1,0 +1,49 @@
+  clase  pública Empleado {
+
+	 cadena  privada primNom ;
+	 cadena  privada simioPat ;
+	 salMen privado doble  ;
+
+	 empleado publico (){
+
+		esto _ primNom = "Juan" ;
+	    esto _ simioPat = "Cierva" ;
+		esto _ salMen = 0.0 ;
+
+	}
+
+	public  void  establecerPrimNom ( String  primNom ){
+		esto _ primNom = primNom ;
+	}
+
+	public  String  obtenerPrimNom (){
+		return  primNom ;
+	}
+
+	public  void  establecerApePat ( String  apePat ){
+		esto _ simioPat = simioPat ;
+	}
+
+	public  String  obtenerApePat (){
+		volver  apePat ;
+	}
+
+	public  void  establecerSalMen ( double  salMen ){
+		si ( salMen > 0 )
+		esto _ salMen = salMen ;
+	}
+
+	 doble  público obtenerSalMen (){
+		volver  salMen ;
+	}
+
+	public  void  obtenerDatosEmpleado (){
+
+		sistema _ fuera _ println ( "Primer Nombre: " + primNom +
+						   "\nApellido Paterno: " + simioPat +
+						   "\nSalario mensual: $" + salMen );
+
+	}
+
+
+}
